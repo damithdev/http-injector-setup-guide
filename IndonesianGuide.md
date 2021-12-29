@@ -311,7 +311,7 @@ systemctl enable nginx
 # Konfigurasi Client
 
 ## Android
-Download v2rayNG_x.x.xx.apk dari [https://github.com/2dust/v2rayNG/releases/latest](https://github.com/2dust/v2rayNG/releases/latest) atau jika kalian malas bisa di cari di playstore
+Download v2flyNG_x.x.xx.apk dari [https://github.com/2dust/v2flyNG/releases/latest](https://github.com/2dust/v2flyNG/releases/latest) atau jika kalian malas bisa di cari "v2rayNG" di google playstore
 
 Tekan tombol (+) diatas kanan >> Type manually[Vmess]
 
