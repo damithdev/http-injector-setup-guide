@@ -159,6 +159,8 @@ Gunakan ctrl+s dan ctrl + x. untuk save and exit.
   
 </details>
 
+## Konfigurasi nginx
+
 ```
 echo "" > /etc/nginx/sites-available/default
 ```
