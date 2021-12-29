@@ -313,8 +313,8 @@ systemctl enable nginx
 ## Android
 Download v2rayNG_x.x.xx.apk dari [https://github.com/2dust/v2rayNG/releases/](https://github.com/2dust/v2rayNG/releases/) atau jika kalian malas bisa di cari di playstore
 
-Tombol + diatas kanan
-Type manually[Vmess]
+Tekan tombol (+) diatas kanan >> Type manually[Vmess]
+
 ```
 Configuration file
 ---------------------------------------------------------------
@@ -352,9 +352,9 @@ Transport
 ---------------------------------------------------------------
 Network        : ws
 request host   : 
-path           : /<OUTPUT DARI echo $RANDOM>
+path           : /063f04131db66c38e76202c9fae75a12
 tls            : tls
-SNI            : <SILAHAKAN GUNAKAN DOMAIN YANG INGIN KALIAN INJECT. contoh kuota belajar "meet.google.com", kuota youtube "youtube.com">
+SNI            : meet.google.com
 allowInsecure  : true
 ```
   
@@ -382,10 +382,10 @@ Transport
 Transport protocol : ws
 Camouflage type    : none
 Camouflage domain  : 
-Path               : /063f04131db66c38e76202c9fae75a12
+Path               : /<OUTPUT DARI echo $RANDOM>
 TLS                : TLS
 allowInsecure      : true
-SNI                : meet.google.com
+SNI                : <SILAHAKAN GUNAKAN DOMAIN YANG INGIN KALIAN INJECT. contoh kuota belajar "meet.google.com", kuota youtube "youtube.com">
 ```
 
 ### Contoh dari config yang sudah jadi
