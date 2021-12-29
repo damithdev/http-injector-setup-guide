@@ -1,4 +1,4 @@
-## Disclaimer! This guide is only for educational purposes!!! 
+## Disclaimer! This guide is for educational purposes only!!! 
 
 ## Get yourself a domain name
 If you already have a domain you can use that if not you can get a free domain at [duckdns](duckdns.org)
