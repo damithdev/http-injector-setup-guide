@@ -7,12 +7,47 @@ Jika sudah punya domain dapat digunakan, jika belum bisa mendapatkan domain grat
 
 ## Dapatkan VPS Gratis
 
-Ikuti panduan ini [https://github.com/neneeen/own-vpn-for-everyone/blob/main/guides/OracleIndonesia.md](https://github.com/neneeen/own-vpn-for-everyone/blob/main/guides/OracleIndonesia.md) sampai mendapatkan akses ssh.
-Setelah "Di jendela baru yang terbuka, ketik sudo su dan tekan Enter"
+### Prasyarat
+
+* Kartu kredit/kartu debit yang mendukung transaksi online *tanpa* 3-D Secure (hampir semua kartu kredit berlogo Visa & MasterCard, kartu debit Jenius)
+
+### Biaya
+
+* Gratis selamanya, kuota 10 TB tiap bulan.
+
+### Membuat akun Oracle Cloud
+
+Masuk ke https://www.oracle.com/cloud/free/ dan klik **Start for free**. Oracle akan membuat dua test charge, yang pertama sekitar 1 USD, yang kedua sekitar 10 USD beberapa hari kemudian, keduanya akan dibatalkan setelahnya. Kecuali [upgrade](https://www.oracle.com/cloud/free/faq.html), Oracle *tidak akan* menarik biaya walaupun kredit gratis 200 dollar sudah habis atau 30 hari telah lewat. VM free tier tetap akan berjalan selamanya.
+
+Free tier tidak bisa mengganti/menambah region setelah pembayaran. Untuk pengguna Indonesia gunakan region Singapura.
+
+Jika menemui masalah tentang token SMS, kontak customer service chat dari situs Oracle. Setelah memasukkan informasi kartu pembayaran, proses dari Oracle bisa memakan waktu beberapa jam sebelum akun diaktifkan dan bisa membuat VM. Selama menunggu email dari Oracle yang memberikan Cloud Account name, install dulu Bitvise client
+
+### Setup Bitvise client
+
+Download dan jalankan installer Bitvise client dari https://www.bitvise.com/ssh-client-download
+
+### Membuat VM
+
+Masuk ke https://www.oracle.com/cloud/sign-in.html dan gunakan cloud account name dari email Oracle, lalu login dengan username (email) dan password yang sudah diset sebelumnya.
+
+Setelah masuk di console, klik Create a VM instance
+
+Di bagian Image and shape, edit dan ganti Image ke Canonical Ubuntu 20.04 Minimal.
+
+Di bagian Add SSH keys, klik Save Private Key. Buka Bitvise, klik Client key manager, Import. Ganti filetype dari Bitvise Keypair Files ke All Files, lalu pilih file yang baru didownload. Klik Import dan pastikan ada entry baru. Tutup dialog, kembali ke halaman Oracle dan klik Create. Tunggu sampai status instance berubah dari Provisioning menjadi Running. Cari field Public IP Address, klik Copy
+
+Kembali ke Bitvise, paste IP address ke Host. Ubah Username ke ubuntu, pastikan Initial Method diset ke publickey. Set Client Key ke Auto, lalu klik Login. Di dialog Host Key Verification, klik Accept and Save. Setelah koneksi sukses, klik New Terminal Console
 
 Jangan lupa mengganti IP address di duckdns menjadi IP dari VPS tersebut
 
-Jangan lupa konfigurasi Security list di Oracle Cloud untuk allow port 80/tcp dan 443/tcp dari 0.0.0.0/0. Bisa di lihat guide nya di [Membuka Akses Jaringan](https://github.com/neneeen/own-vpn-for-everyone/blob/main/guides/OracleIndonesia.md#membuka-akses-jaringan)
+### Membuka Akses Jaringan
+
+Di halaman Oracle, di bagian  Primary VNIC, klik Subnet. Di halaman yang terbuka, klik Default Security List, lalu klik Add Ingress Rules, dan sesuaikan isinya seperti dibawah ini lalu klik Add Ingress Rules.
+
+<br><img src="https://github.com/neneeen/own-vpn-for-everyone/blob/3c194c1fbf8ad2a9cb5d3b78eb25b95246b93ab8/images/oracle6.png" width="645">
+
+Lakukan hal yang sama namun port 443 di ganti port 80
 
 # Setting server v2fly
 
@@ -369,3 +404,7 @@ SNI                : meet.google.com
 ```
   
 </details>
+
+  
+Refrensi:
+  - https://github.com/neneeen/own-vpn-for-everyone
