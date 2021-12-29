@@ -3,7 +3,7 @@
 # Konfigurasi Server
 
 ## Dapatkan domain Gratis
-Jika sudah punya domain dapat digunakan, jika belum bisa mendapatkan domain gratis di [duckdns](duckdns.org)
+Jika sudah punya domain dapat digunakan, jika belum bisa mendapatkan domain gratis di [duckdns](https://www.duckdns.org)
 
 ## Dapatkan VPS Gratis
 
