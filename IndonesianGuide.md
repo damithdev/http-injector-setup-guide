@@ -362,9 +362,12 @@ allowInsecure  : true
 
 
 ## Windows
-Untuk windows saya belum pernah ngetest hotspot apakah berhasil atau tidak.
+Untuk windows saya belum pernah test apakah hotspot berhasil atau tidak.
+
 Download v2rayN-Core.zip dari [https://github.com/2dust/v2rayN/releases/](https://github.com/2dust/v2rayN/releases/)
+
 Extract zip nya lalu jalankan v2rayN.exe
+
 Servers > Add VMess server
 
 ```
