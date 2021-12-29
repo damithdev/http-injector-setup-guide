@@ -421,7 +421,7 @@ SNI                : meet.google.com
 ## Troubleshooting
 
 - Jika kalian mendapatkan "Fail to detect internet connection: io: read/write on closed pipe". pastikan allowInsecure: true
-- Jika sudah betul dan masih tidak bisa, coba juga mengunjungi domain kalian pastikan kalian melihat halaman "Welcome to nginx". jika tidak periksa kembali "/etc/nginx/sites-available/default"
+- Jika sudah betul dan masih tidak bisa, coba juga mengunjungi domain kalian pastikan kalian melihat halaman "Welcome to nginx" dalam https. jika tidak periksa kembali "/etc/nginx/sites-available/default"
 - Coba juga kunjungi domainkalian.duckdns.org/path_kalian contoh vincenttjia.duckdns.org/063f04131db66c38e76202c9fae75a12. jika muncul "502 Bad Gateway" cek kembali v2ray dengan "sudo systemctl status v2ray" dan cek kembali file "/usr/local/etc/v2ray.config.json". jika halaman dengan tulisan "bad request" seharusnya sudah betul dan v2ray harusnya bisa terkoneksi, jika tidak cek kembali id, alterId, domain, dan path pastikan server dan client memiliki value yang sama.
 
 Refrensi:
