@@ -297,7 +297,15 @@ systemctl restart v2ray
 ```
 
 ```
+systemctl enable v2ray
+```
+
+```
 systemctl restart nginx
+```
+
+```
+systemctl enable nginx
 ```
 
 # Konfigurasi Client
