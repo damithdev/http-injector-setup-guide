@@ -329,6 +329,7 @@ Port               : 443
 UUID               : <OUTPUT DARI v2ctl uuid>
 AlterId            : <ALTERID YANG TELAH KALIAN SETEL DI SERVER>
 Encryption method  : Auto
+Alias              : <BEBAS>
 
 Transport
 ------------------------------------------------------------------
@@ -352,6 +353,7 @@ Port               : 443
 UUID               : 5c8713c8-4d98-933f-4460-54adc8c07c71
 AlterId            : 64
 Encryption method  : Auto
+Alias              : Server Singapore
 
 Transport
 ------------------------------------------------------------------
