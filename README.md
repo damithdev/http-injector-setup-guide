@@ -10,4 +10,6 @@ Kenapa anda butuh/menginginkan server V2Fly? anda dapat mengunakannya untuk inje
 
 Contohnya anda dapat mengunakan kuota belajar(yang hanya bisa di gunakan untuk google meet, zoom dsb) untuk keperluan lain seperti instagram.
 
+# Honorable mentions
+
 Thanks to [neneeen](https://github.com/neneeen) for providing the guide for the Free Oracle Cloud VPS.
