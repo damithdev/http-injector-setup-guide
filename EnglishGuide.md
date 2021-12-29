@@ -363,7 +363,7 @@ allowInsecure  : true
 ## Windows
 For windows I have not tested if it works with hotspot from the phone.
 
-Download v2rayN-Core.zip dari [https://github.com/2dust/v2rayN/releases/](https://github.com/2dust/v2rayN/releases/)
+Download v2rayN-Core.zip dari [https://github.com/2dust/v2rayNG/releases/latest](https://github.com/2dust/v2rayNG/releases/latest)
 
 Extract the zip file then run v2rayN.exe
 
