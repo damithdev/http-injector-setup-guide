@@ -114,6 +114,7 @@ Gunakan ctrl+s dan ctrl + x. untuk save and exit.
 
 ### Contoh dari file /usr/local/etc/v2ray/config.json yang sudah jadi
 <details>
+
 <b>JANGAN COPAS CONTOH!!!</b> Karena jika orang lain mengetahui ID, AlterID, domain dan path anda, server anda dapat digunakan siapa saja(Anggap domain sebagai username dan ID sebagai password)
 ```
 {
@@ -155,6 +156,7 @@ Gunakan ctrl+s dan ctrl + x. untuk save and exit.
   }
 }
 ```
+  
 </details>
 
 ```
@@ -207,6 +209,7 @@ server {
 
 ### Contoh dari file /etc/nginx/sites-available/default yang sudah jadi.
 <details>
+
 ```
 server {
     listen 80 default_server;
@@ -244,6 +247,7 @@ server {
     }
 }
 ```
+  
 </details>
 
 ## Finalisasi
@@ -285,6 +289,7 @@ allowInsecure  : true
 
 ### Contoh dari config yang sudah jadi
 <details>
+  
 ```
 Configuration file
 ---------------------------------------------------------------
@@ -304,6 +309,7 @@ tls            : tls
 SNI            : <SILAHAKAN GUNAKAN DOMAIN YANG INGIN KALIAN INJECT. contoh kuota belajar "meet.google.com", kuota youtube "youtube.com">
 allowInsecure  : true
 ```
+  
 </details>
 
 
@@ -335,6 +341,7 @@ SNI                : meet.google.com
 
 ### Contoh dari config yang sudah jadi
 <details>
+  
 ```
 Server
 ------------------------------------------------------------------
@@ -354,9 +361,5 @@ TLS                : TLS
 allowInsecure      : true
 SNI                : meet.google.com
 ```
+  
 </details>
-
-
-
-
-
