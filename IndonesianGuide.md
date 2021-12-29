@@ -1,3 +1,5 @@
+## Disclaimer! Panduan ini hanya bersifat educational!!! 
+
 # Konfigurasi Server
 
 ## Dapatkan domain Gratis
