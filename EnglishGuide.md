@@ -310,7 +310,7 @@ systemctl enable nginx
 # Konfigurasi Client
 
 ## Android
-Download v2rayNG_x.x.xx.apk from [https://github.com/2dust/v2rayNG/releases/](https://github.com/2dust/v2rayNG/releases/) or you can install it from the google playstore
+Download v2rayNG_x.x.xx.apk from [https://github.com/2dust/v2rayNG/releases/latest](https://github.com/2dust/v2rayNG/releases/latest) or you can install it from the google playstore
 
 Press the (+) button on the top right >> Type manually[Vmess]
 
@@ -363,7 +363,7 @@ allowInsecure  : true
 ## Windows
 For windows I have not tested if it works with hotspot from the phone.
 
-Download v2rayN-Core.zip dari [https://github.com/2dust/v2rayNG/releases/latest](https://github.com/2dust/v2rayNG/releases/latest)
+Download v2rayN-Core.zip dari [https://github.com/2dust/v2rayN/releases/latest](https://github.com/2dust/v2rayN/releases/latest)
 
 Extract the zip file then run v2rayN.exe
 
