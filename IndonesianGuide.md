@@ -364,7 +364,7 @@ allowInsecure  : true
 ## Windows
 Untuk windows saya belum pernah test apakah hotspot berhasil atau tidak.
 
-Download v2rayN-Core.zip dari [https://github.com/2dust/v2rayN/releases/](https://github.com/2dust/v2rayN/releases/)
+Download v2rayN-Core.zip dari [https://github.com/2dust/v2rayN/releases/latest](https://github.com/2dust/v2rayN/releases/latest)
 
 Extract zip nya lalu jalankan v2rayN.exe
 
