@@ -50,6 +50,7 @@ Di halaman Oracle, di bagian  Primary VNIC, klik Subnet. Di halaman yang terbuka
 Lakukan hal yang sama namun port 443 di ganti port 80
 
 # Setting server v2fly
+Kembali ke terminal bitvise lalu masukan perintah-perintah dibawah ini.
 
 ## Konfigurasi IPTable
 ```
