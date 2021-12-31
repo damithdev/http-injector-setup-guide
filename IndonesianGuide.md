@@ -214,6 +214,8 @@ server {
     listen 80 default_server;
     listen [::]:80 default_server;
     server_name _;
+    access_log off;
+    error_log /dev/null crit;
 
     return 301 https://$server_name:443$request_uri;
 }
@@ -225,6 +227,8 @@ server {
 
     ssl_certificate /etc/letsencrypt/live/<DOMAIN ANDA>/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/<DOMAIN ANDA>/privkey.pem;
+    access_log off;
+    error_log /dev/null crit;
     
     root /var/www/html;
     index index.html index.htm index.nginx-debian.html;
@@ -255,6 +259,8 @@ server {
     listen 80 default_server;
     listen [::]:80 default_server;
     server_name _;
+    access_log /dev/null;
+    error_log /dev/null crit;
 
     return 301 https://$server_name:443$request_uri;
 }
@@ -266,6 +272,8 @@ server {
 
     ssl_certificate /etc/letsencrypt/live/vincenttjia.duckdns.org/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/vincenttjia.duckdns.org/privkey.pem;
+    access_log /dev/null;
+    error_log /dev/null crit;
     
     root /var/www/html;
     index index.html index.htm index.nginx-debian.html;
