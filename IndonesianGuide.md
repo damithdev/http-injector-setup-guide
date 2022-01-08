@@ -433,5 +433,48 @@ SNI                : meet.google.com
 - Coba juga kunjungi domainkalian.duckdns.org/path_kalian contoh vincenttjia.duckdns.org/063f04131db66c38e76202c9fae75a12. jika muncul "502 Bad Gateway" cek kembali v2ray dengan "sudo systemctl status v2ray" atau "sudo systemctl start v2ray" dan cek kembali file "/usr/local/etc/v2ray.config.json". selain itu periksa juga port di "/etc/nginx/sites-available/default" apakah sudah sesuai dengan konfigurasi v2ray. Jika halaman dengan tulisan "bad request" sudah muncul, seharusnya sudah betul dan v2ray harusnya bisa terkoneksi, jika tidak cek kembali id, alterId, domain, dan path pastikan server dan client memiliki value yang sama.
 - Jika halaman nginx tidak mau terload pastikan kalian sudah menjalankan perintah iptables dan sudah membuka security list di Oracle cloud console. coba juga command "sudo systemctl start nginx", selain itu coba "sudo nginx -t" < perintah tersebut dapat memberitahu dimana letak kesalahan kalian. perbaiki lalu "sudo systemctl restart nginx".
 
+<details>
+  <summary>Jika kalian sudah konek namun tidak dapat terkoneksi dengan internet coba hal dibawah ini</summary>
+  
+  ```
+  nano /etc/systemd/system/v2ray.service
+  ```
+  
+  Tambahkan ini dibawah [Service]
+  ```
+  Environment='V2RAY_VMESS_AEAD_FORCED=false'
+  ```
+  
+  <details>
+    <summary>Contoh hasil jadi</summary>
+    ```
+    [Unit]
+    Description=V2Ray Service
+    Documentation=https://www.v2fly.org/
+    After=network.target nss-lookup.target
+
+    [Service]
+    User=nobody
+    Environment='V2RAY_VMESS_AEAD_FORCED=false'
+    CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+    AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+    NoNewPrivileges=true
+    ExecStart=/usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json
+    Restart=on-failure
+    RestartPreventExitStatus=23
+
+    [Install]
+    WantedBy=multi-user.target
+    ```
+  </details>
+  
+  ```
+  systemctl restart v2ray
+  ```
+  
+  lalu coba konek lagi
+</details>
+
+
 Refrensi:
   - https://github.com/neneeen/own-vpn-for-everyone
