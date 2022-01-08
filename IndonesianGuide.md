@@ -448,7 +448,6 @@ SNI                : meet.google.com
   <details>
     <summary>Contoh hasil jadi</summary>
     
-    ```
     [Unit]
     Description=V2Ray Service
     Documentation=https://www.v2fly.org/
@@ -466,7 +465,6 @@ SNI                : meet.google.com
 
     [Install]
     WantedBy=multi-user.target
-    ```
     
   </details>
   
