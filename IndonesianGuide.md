@@ -479,3 +479,5 @@ SNI                : meet.google.com
 
 Refrensi:
   - https://github.com/neneeen/own-vpn-for-everyone
+  - https://www.oilandfish.com/posts/v2ray.html
+  - https://giters.com/v2fly/v2ray-core/issues/1509
