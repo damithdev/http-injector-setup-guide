@@ -311,8 +311,10 @@ Environment='V2RAY_VMESS_AEAD_FORCED=false'
 ```
   
 <details>
+  
   <summary>Contoh hasil jadi</summary>
   
+  ```
   [Unit]
   Description=V2Ray Service
   Documentation=https://www.v2fly.org/
@@ -330,6 +332,7 @@ Environment='V2RAY_VMESS_AEAD_FORCED=false'
 
   [Install]
   WantedBy=multi-user.target
+  ```
     
 </details>
   
