@@ -87,7 +87,7 @@ bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/
 ## Setup Certbot
 
 ```
-certbot certonly --nginx --non-interactive --agree-tos --email xvincent1000@gmail.com -d <domainanda>.duckdns.org
+certbot certonly --nginx --non-interactive --agree-tos --email <email anda> -d <domain anda>.duckdns.org
 ```
 
 ## Setup V2Fly
